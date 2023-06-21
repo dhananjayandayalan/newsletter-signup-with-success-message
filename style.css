@@ -1,30 +1,135 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey: hsla(243, 28%, 13%, 0.25);
+  --color-navy: hsl(235, 18%, 26%);
+  --color-accent: hsl(4, 100%, 67%);
+  --color-gradient: linear-gradient(
+    204.47deg,
+    hsl(15, 100%, 61%) 0%,
+    hsl(346, 100%, 66%) 100%
+  );
+  --box-shadow: 0rem 1rem 2rem hsla(4, 100%, 67%, 0.5);
+  --fs-body: 1rem;
+  --fs-body-small: 0.75rem;
+  font-family: 'Roboto', sans-serif;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-body {
-  height: 100vh;
-}
-
-main {
-  height: 100vh;
-}
-
 * {
   margin: 0;
+  padding: 0;
 }
 
 img,
 picture {
   display: block;
-  width: 100%;
+  max-width: 100%;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  height: 100vh;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.content {
+  padding-inline: 2rem;
+  margin-top: 2.5rem;
+}
+
+.content h1 {
+  font-weight: 700;
+  font-size: clamp(2.5rem, calc(2.15rem + 1.5vw), 3.5rem);
+}
+
+.content p {
+  margin-top: 1.5rem;
+}
+
+.content ul {
+  margin-top: 1.5rem;
+}
+
+.content ul {
+  list-style: none;
+  padding: unset;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.content li {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+}
+
+.content li img {
+  width: 21px;
+}
+
+.content li span {
+  line-height: 1.5;
+}
+
+.content form {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content form label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.content form input {
+  padding: 1rem 1rem;
+  border: 1.5px solid var(--color-grey);
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  background: var(--color-navy);
+  border: unset;
+  border-radius: 8px;
+  height: 3.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--color-gradient);
 }
 
 footer {
-    font-size: 14px;
-    text-align: center;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: red;
 }
 
 .hide {
