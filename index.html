@@ -22,9 +22,9 @@
   <!-- Sign-up form start -->
 
   <main>
-    <section class="main">
+    <section class="main hide">
       <picture>
-        <source media="(min-width: 600px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+        <source media="(min-width: 700px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
         <img src=" ./assets/images/illustration-sign-up-mobile.svg"
           alt="Illustration contains some sample charts and a Tablet screen">
       </picture>
@@ -45,14 +45,14 @@
         </form>
       </div>
     </section>
-    <section class="success hide">
+    <section class="success">
       <img src="./assets/images/icon-success.svg" alt="Tick icon represents success">
       <h1>Thanks for subscribing!</h1>
 
       <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>.
         Please open it and click the button inside to confirm your subscription.</p>
 
-      <button>Dismiss message</button>
+      <button id="dismiss">Dismiss message</button>
     </section>
   </main>
 
@@ -61,5 +61,6 @@
     Coded by <a href="https://twitter.com/dhananstonks" target="_blank">Dhanan</a>.
   </footer>
 </body>
+<script src="./script.js"></script>
 
 </html>
